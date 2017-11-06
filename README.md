@@ -11,3 +11,4 @@ Algunos recursos de interés:
  - Documentación oficial de Bootstrap: https://getbootstrap.com/docs/4.0/getting-started/introduction/
  - Tutorial de W3C Schoools sobre Bootstrap: https://www.w3schools.com/bootstrap/
  - Manual de bootstrap en español: http://librosweb.es/libro/bootstrap_3/
+ - Un post de resumen bastante bueno en inglés: https://medium.freecodecamp.org/bootstrap-4-everything-you-need-to-know-c750991f6784
