@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Parte de accidentes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header><h1>Declaracion amistosa de accidente</h1></header>
+        <main>
+            <form action=".">
+                1 Fecha del accidente:<input type="date" name="Fecha del accidente" id="fechaAccidente" required><br/>
+                Hora: <input type="time" name="Hora" id="hora" required><br/>
+                2 Localizacion: Pais: <input type="text" name="Pais" id="pais" required><br/>
+                Lugar: <input type="text" name="Lugar" id="lugar" required><br/>
+                3 Victima(s) incluso leve(s) <input type="radio" name="victimas" value="Si"> Si
+                <input type="radio" name="victimas" value="No"> No<br/>
+                <br/>
+                4 Daños materiales.<br/>
+                Vehiculos distintos de A y B <input type="radio" name="distintos" value="Si"> Si
+                <input type="radio" name="distintos" value="No"> No<br/>
+                Objetos distintos al vehiculo <input type="radio" name="objetos" value="Si"> Si
+                <input type="radio" name="objetos" value="No"> No<br/>
+                5 Testigos: nombre, direccion, tel. <textarea name="Testigos" rows="5" cols="30"></textarea>
+                <br/>
+                <table>
+                    <tr>
+                        <th style="width: 30%"><h1>Vehiculo A</h1></th>
+                        <th style="width: 5%"></th>
+                        <th style="width: 25%"><h1>12. Circuntancias</h1></th>
+                        <th style="width: 5%"></th>
+                        <th style="width: 33%"><h1>Vehiculo B</h1></th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left"><h3>6 Asegurado (ver pol. seguro)</h3></td>
+                        <th></th>
+                        <th>A  Poner un aspa(x) en cada casilla  B</th>
+                        <th></th>
+                        <td style="text-align: left"><h3>6 Asegurado (ver pol. seguro)</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre: <input type="text" name="NombreA" id="nombreA" required> </td>
+                        <td><input type="checkbox" name="1A" value="1A"> 1</td>
+                        <td style="text-align: center">*Estaba estacionado/parado</td>
+                        <td><input type="checkbox" name="1B" value="1B"> 1</td>
+                        <td>Nombre: <input type="text" name="NombreB" id="nombreB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos: <input type="text" name="ApellidosA" id="apellidosA" required> </td>
+                        <td><input type="checkbox" name="2A" value="2A"> 2</td>
+                        <td style="text-align: center">*Salia de un estacionamiento</td>
+                        <td><input type="checkbox" name="2B" value="2B"> 2</td>
+                        <td>Apellidos: <input type="text" name="ApellidosB" id="apellidosB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Direccion: <input type="text" name="DireccionA" id="direccionA" required> </td>
+                        <td></td>
+                        <td style="text-align: center">/ abriendo una puerta </td>
+                        <td></td>
+                        <td>Direccion: <input type="text" name="DireccionB" id="direccionB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Codigo Postal: <input type="text" name="CodigoPostalA" id="codigoPostalA" required> </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Codigo Postal: <input type="text" name="CodigoPostalB" id="codigoPostalB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Telefono o email: <input type="text" name="TelefonoOEmailA" id="telefonoOEmailA" required> </td>
+                        <td><input type="checkbox" name="3A" value="3A"> 3</td>
+                        <td style="text-align: center">Iba a estacionar</td>
+                        <td><input type="checkbox" name="3B" value="3B"> 3</td>
+                        <td>Telefono o email: <input type="text" name="TelefonoOEmailB" id="telefonoOEmailB"> </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left"><h3>7 Vehiculo </h3></td>
+                        <td><input type="checkbox" name="4A" value="4A"> 4</td>
+                        <td style="text-align: center">Salia de un aparcamiento, de un</td>
+                        <td><input type="checkbox" name="4B" value="4B"> 4</td>
+                        <td style="text-align: left"><h3>7 Vehiculo </h3></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">VEHICULO A MOTOR</td>
+                        <td></td>
+                        <td style="text-align: center">lugar privado, de camino de tierra</td>
+                        <td></td>
+                        <td style="text-align: left">VEHICULO A MOTOR</td>
+                    </tr>
+                    <tr>
+                        <td>Marca: <select name="select">
+                                        <option value="value1">Seat</option> 
+                                        <option value="value2">Renault</option>
+                                        <option value="value3">Peugeout</option>
+                                        <option value="value4">Otra</option>
+                                      </select>
+                            <br/>Modelo: <input type="text" name="ModeloA" id="modeloA" required> </td>
+                        <td><input type="checkbox" name="5A" value="5A"> 5</td>
+                        <td style="text-align: center">Entraba a un lugar privado, a un</td>
+                        <td><input type="checkbox" name="5B" value="5B"> 5</td>
+                        <td>Marca: <select name="select">
+                                        <option value="value1">Seat</option> 
+                                        <option value="value2">Renault</option>
+                                        <option value="value3">Peugeout</option>
+                                        <option value="value4">Otra</option>
+                                      </select>
+                            <br/>Modelo: <input type="text" name="ModeloB" id="modeloB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Matricula o bastidor: <input type="text" name="MatriculaA" id="matriculaA" required></td>
+                        <td></td>
+                        <td style="text-align: center">lugar privado, a un camino de tierra</td>
+                        <td></td>
+                        <td>Matricula o bastidor: <input type="text" name="MatriculaB" id="matriculaB"></td>
+                    </tr>
+                    <tr>
+                        <td>Pais de matricula: <input type="text" name="PaisMatriculaA" id="paisMatriculaA"></td>
+                        <td><input type="checkbox" name="6A" value="6A"> 6</td>
+                        <td style="text-align: center">Entraba a una plaza de sentido</td>
+                        <td><input type="checkbox" name="6B" value="6B"> 6</td>
+                        <td>Pais de matricula: <input type="text" name="PaisMatriculaB" id="paisMatriculaB"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">REMOLQUE</td>
+                        <td></td>
+                        <td style="text-align: center"> giratorio</td>
+                        <td></td>
+                        <td style="text-align: left">REMOLQUE</td>
+                    </tr>
+                    <tr>
+                        <td>Matricula o bastidor: <input type="text" name="MatriculaRA" id="matriculaRA"></td>
+                        <td><input type="checkbox" name="7A" value="7A"> 7</td>
+                        <td style="text-align: center">Circulaba por una plaza de sentido</td>
+                        <td><input type="checkbox" name="7B" value="7B"> 7</td>
+                        <td>Matricula o bastidor: <input type="text" name="MatriculaRB" id="matriculaRB"></td>
+                    </tr>
+                    <tr>
+                        <td>Pais de matricula: <input type="text" name="PaisMatriculaRA" id="paisMatriculaRA"></td>
+                        <td></td>
+                        <td style="text-align: center">giratorio</td>
+                        <td></td>
+                        <td>Pais de matricula: <input type="text" name="PaisMatriculaRB" id="paisMatriculaRB"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left"><h3>8 Aseguradora (vease poliza de seguro)</h3></td>
+                        <td><input type="checkbox" name="8A" value="8A"> 8</td>
+                        <td style="text-align: center">Colisiono en la parte de atras al otro</td>
+                        <td><input type="checkbox" name="8B" value="8B"> 8</td>
+                        <td style="text-align: left"><h3>8 Aseguradora (vease poliza de seguro)</h3></td>
+                    </tr>
+                    <tr>
+                        <td>NOMBRE: <select name="select">
+                                        <option value="value1">Mapfre</option> 
+                                        <option value="value2">Axa</option>
+                                        <option value="value3">Allianz</option>
+                                        <option value="value4">Otra</option>
+                                      </select>
+                        </td>
+                        <td></td>
+                        <td style="text-align: center">vehiculo que circulaba en el mismo</td>
+                        <td></td>
+                        <td>NOMBRE: <select name="select">
+                                        <option value="value1">Mapfre</option> 
+                                        <option value="value2">Axa</option>
+                                        <option value="value3">Allianz</option>
+                                        <option value="value4">Otra</option>
+                                      </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Numero de poliza: <input type="text" name="NumeroPolizaA" id="numeroPolizaA" required></td>
+                        <td></td>
+                        <td style="text-align: center">sentido y en el mismo carril</td>
+                        <td></td>
+                        <td>Numero de poliza: <input type="text" name="NumeroPolizaB" id="numeroPolizaB"></td>
+                    </tr>
+                    <tr>
+                        <td>Numero carta verde: <input type="text" name="CartaVerdeA" id="cartaVerdeA"></td>
+                        <td><input type="checkbox" name="9A" value="9A"> 9</td>
+                        <td style="text-align: center">Circulaba en el mismo sentido y en</td>
+                        <td><input type="checkbox" name="9B" value="9B"> 9</td>
+                        <td>Numero carta verde: <input type="text" name="CartaVerdeB" id="cartaVerdeB"></td>
+                    </tr>
+                    <tr>
+                        <td>Certificado: <input type="text" name="CertificadoA" id="certificadoA"></td>
+                        <td></td>
+                        <td style="text-align: center">carril diferente</td>
+                        <td></td>
+                        <td>Certificado: <input type="text" name="CertificadoB" id="certificadoB"></td>
+                    </tr>
+                    <tr>
+                        <td>o Carta verde valida desde: <input type="date" name="CartaDesdeA" id="cartaDesdeA"> hasta: <input type="date" name="CartaHastaA" id="cartaHastaA"></td>
+                        <td><input type="checkbox" name="10A" value="10A"> 10</td>
+                        <td style="text-align: center">Cambiaba de carril</td>
+                        <td><input type="checkbox" name="10B" value="10B"> 10</td>
+                        <td>o Carta verde valida desde: <input type="date" name="CartaDesdeB" id="cartaDesdeB"> hasta: <input type="date" name="CartaHastaB" id="cartaHastaB"></td>
+                    </tr>
+                    <tr>
+                        <td>Agencia: <input type="text" name="AgenciaA" id="agenciaA"></td>
+                        <td><input type="checkbox" name="11A" value="11A"> 11</td>
+                        <td style="text-align: center">Adelantaba</td>
+                        <td><input type="checkbox" name="11B" value="11B"> 11</td>
+                        <td>Agencia: <input type="text" name="AgenciaB" id="agenciaB"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre: <input type="text" name="NombA" id="nombA"></td>
+                        <td><input type="checkbox" name="12A" value="12A"> 12</td>
+                        <td style="text-align: center">Giraba a la derecha</td>
+                        <td><input type="checkbox" name="12B" value="12B"> 12</td>
+                        <td>Nombre: <input type="text" name="NombB" id="nombB"></td>
+                    </tr>
+                    <tr>
+                        <td>Direccion: <input type="text" name="DirA" id="dirA"></td>
+                        <td><input type="checkbox" name="13A" value="13A"> 13</td>
+                        <td style="text-align: center">Giraba a la izquierda</td>
+                        <td><input type="checkbox" name="13B" value="13B"> 13</td>
+                        <td>Direccion: <input type="text" name="DirB" id="dirB"></td>
+                    </tr>
+                    <tr>
+                        <td>Pais: <input type="text" name="PaA" id="paA"></td>
+                        <td><input type="checkbox" name="14A" value="14A"> 14</td>
+                        <td style="text-align: center">Daba marcha atras</td>
+                        <td><input type="checkbox" name="14B" value="14B"> 14</td>
+                        <td>Pais: <input type="text" name="PaB" id="paB"></td>
+                    </tr>
+                    <tr>
+                        <td>Telefono o email: <input type="text" name="TnoEmailA" id="tnoEmailA"></td>
+                        <td><input type="checkbox" name="15A" value="15A"> 15</td>
+                        <td style="text-align: center">Invadia la parte reservada a la</td>
+                        <td><input type="checkbox" name="15B" value="15B"> 15</td>
+                        <td>Telefono o email: <input type="text" name="TnoEmailB" id="tnoEmailB"></td>
+                    </tr>
+                    <tr>
+                        <td>¿Los daños propios del vehiculo estan asegurados?</td>
+                        <td></td>
+                        <td style="text-align: center">circulacion en sentido inverso</td>
+                        <td></td>
+                        <td>¿Los daños propios del vehiculo estan asegurados?</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="NoDañosA" value="noDañosA"> No <input type="checkbox" name="SiDañosA" value="siDañosA"> Si</td>
+                        <td><input type="checkbox" name="16A" value="16A"> 16</td>
+                        <td style="text-align: center">Venia de la derecha</td>
+                        <td><input type="checkbox" name="16B" value="16B"> 16</td>
+                        <td><input type="checkbox" name="NoDañosB" value="noDañosB"> No <input type="checkbox" name="SiDañosB" value="siDañosB"> Si</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left"><h3>9 Conductor (ver permiso conducir)</h3></td>
+                        <td></td>
+                        <td style="text-align: center">(en un cruce)</td>
+                        <td></td>
+                        <td style="text-align: left"><h3>9 Conductor (ver permiso conducir)</h3></td>
+                    </tr>
+                     <tr>
+                        <td>Nombre: <input type="text" name="NombreCA" id="nombreCA" required> </td>
+                        <td><input type="checkbox" name="17A" value="17A"> 17</td>
+                        <td style="text-align: center">No respeto la señal de preferencia</td>
+                        <td><input type="checkbox" name="17B" value="17B"> 17</td>
+                        <td>Nombre: <input type="text" name="NombreCB" id="nombreCB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos: <input type="text" name="ApellidosCA" id="apellidosCA" required> </td>
+                        <td></td>
+                        <td style="text-align: center">o semaforo en rojo</td>
+                        <td></td>
+                        <td>Apellidos: <input type="text" name="ApellidosCB" id="apellidosCB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Fecha nacimiento: <input type="date" name="NacimientoCA" id="nacimientoCA" required> </td>
+                        <td><input type="text" name="NumA" id="numA" size="1"> <- </td>
+                        <td style="text-align: center"><b>Indicar nº de casillas marcadas</b></td>
+                        <td> -> <input type="text" name="NumB" id="numB" size="1"></td>
+                        <td>Fecha nacimiento: <input type="date" name="NacimientoCB" id="nacimientoB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Direccion: <input type="text" name="DireccionCA" id="direccionCA" required> </td>
+                        <td></td>
+                        <td style="text-align: center"><hr/></td>
+                        <td></td>
+                        <td>Direccion: <input type="text" name="DireccionCB" id="direccionCB"> </td>
+                    </tr>
+                    <tr>
+                        <td>Pais: <input type="text" name="PaisCA" id="paisCA" required> </td>
+                        <td></td>
+                        <td><b>La firma de ambos conductores es obligatoria</b></td>
+                        <td></td>
+                        <td>Pais: <input type="text" name="PaisCB" id="paisCB" size="5"> </td>
+                    </tr>
+                    <tr>
+                        <td>Telefono o email: <input type="text" name="TnoEmailCA" id="tnoEmailCA" required=""></td>
+                        <td></td>
+                        <td>No implica reconocimiento de responsabilidad, pero una correcta</td>
+                        <td></td>
+                        <td>Telefono o email: <input type="text" name="TnoEmailCB" id="tnoEmailCB"></td>
+                    </tr>
+                    <tr>
+                        <td>Permiso conducir: <input type="text" name="PermisoConducirA" id="permisoConducirA" required></td>
+                        <td></td>
+                        <td> consignacion de todos los datos facilita la tramitacion</td>
+                        <td></td>
+                        <td>Permiso conducir: <input type="text" name="PermisoConducirB" id="permisoConducirB"></td>
+                    </tr>
+                    <tr>
+                        <td>Categoria (A, B,...): <input type="text" name="CategoriaA" id="categoriaA" required></td>
+                        <td></td><input type="text" name="CategoriaB" id="categoriaB" >
+                        <td></td>
+                        <td></td>
+                        <td>Categoria (A, B,...): </td>
+                    </tr>
+                    <tr>
+                        <td>Permiso valido hasta: <input type="date" name="PermisCHastaA" id="permisoHastaA" required></td>
+                        <td>13</td>
+                        <td><b>Croquis del accidente (en el momento de la colision)</b></td>
+                        <td>13</td>
+                        <td>Permiso valido hasta: <input type="date" name="PermisoHastaB" id="permisoHastaB"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left"><h3>10 Indicar el punto del choque inicial con una flecha</h3></td>
+                        <td></td>
+                        <td><textarea rows="10" cols="50"></textarea></td>
+                        <td></td>
+                        <td style="text-align: left"><h3>10 Indicar el punto del choque inicial con una flecha</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left"><h3>11 Datos apreciado al vehiculo A</h3></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: left"><h3>11 Datos apreciado al vehiculo B</h3></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left"><h3>14 Observaciones</h3></td>
+                        <td>15</td>
+                        <td style="text-align: center"><b>Firma de los conductores</b></td>
+                        <td>15</td>
+                        <td style="text-align: left"><h3>14 Observaciones</h3></td>
+                    </tr>
+                    <tr>
+                        <td><textarea rows="3" cols="50"></textarea></td>
+                        <td><h1>A</h1></td>
+                        <td></td>
+                        <td><h1>B</h1></td>
+                        <td><textarea rows="3" cols="50"></textarea></td>
+                    </tr>
+                </table>
+                
+                <input type="submit" value="Enviar!" />
+            </form>
+        </main>
+        
+        <footer></footer>
+            
+        
+    </body>
+</html>
